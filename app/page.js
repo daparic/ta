@@ -105,20 +105,20 @@ export default function Home() {
               </div>
             </div>
 
-            <form className={styles.form}>
+            <form className={styles.form} action="https://formspree.io/f/meezrkdz" method="POST">
               <div className={styles.formGroup}>
                 <label htmlFor="name" className={styles.label}>Full Name</label>
-                <input type="text" id="name" className={styles.input} placeholder="" />
+                <input type="text" id="name" name="name" className={styles.input} placeholder="" />
               </div>
 
               <div className={styles.formGroup}>
                 <label htmlFor="email" className={styles.label}>Work Email</label>
-                <input type="email" id="email" className={styles.input} placeholder="" />
+                <input type="email" id="email" name="email" className={styles.input} placeholder="" />
               </div>
 
               <div className={styles.formGroup}>
                 <label htmlFor="message" className={styles.label}>How can we help?</label>
-                <textarea id="message" className={styles.textarea} placeholder=""></textarea>
+                <textarea id="message" name="message" className={styles.textarea} placeholder=""></textarea>
               </div>
 
               <button type="submit" className={styles.submitBtn}>Send Message</button>
