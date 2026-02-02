@@ -19,7 +19,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className={styles.hero}>
           <h1 className={styles.heroTitle}>
-            Agentic-aware Automated Software Testing
+            Agent-Aware Autonomous Software Testing 
           </h1>
           <p className={styles.heroSubtitle}>
             Delivering deterministic and reliable software testing solutions that provide stable, repeatable validation—establishing confidence and control within the inherently dynamic and rapidly evolving domain of agentic software systems.
