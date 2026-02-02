@@ -9,7 +9,6 @@ export default function Home() {
         <div className={styles.logo}>truthadjustr</div>
         <nav className={styles.nav}>
           <a href="#features">Features</a>
-          <a href="#compliance">Compliance</a>
           <a href="#testimonials">Testimonials</a>
           <a href="#contact" className={styles.ctaButtonSmall}>Get Started</a>
         </nav>
@@ -19,7 +18,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className={styles.hero}>
           <h1 className={styles.heroTitle}>
-            Agent-Aware Autonomous Software Testing 
+            Agent-Aware Autonomous Software Testing
           </h1>
           <p className={styles.heroSubtitle}>
             Delivering deterministic and reliable software testing solutions that provide stable, repeatable validation—establishing confidence and control within the inherently dynamic and rapidly evolving domain of agentic software systems.
