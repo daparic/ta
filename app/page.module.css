@@ -50,7 +50,7 @@
   align-items: center;
   text-align: center;
   padding: 8rem 2rem;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  background: linear-gradient(135deg, #004d40 0%, #263238 100%);
   color: white;
 }
 
@@ -146,7 +146,7 @@
 
 /* Testimonials */
 .testimonials {
-  background: var(--secondary);
+  background: #263238;
   color: white;
   padding: 6rem 2rem;
 }
@@ -270,7 +270,7 @@
 .footer {
   text-align: center;
   padding: 2rem;
-  background: var(--secondary);
+  background: #263238;
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.9rem;
 }
