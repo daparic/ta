@@ -17,10 +17,10 @@ export default function Home() {
         {/* Hero Section */}
         <section className={styles.hero}>
           <h1 className={styles.heroTitle}>
-            Agentic-aware Automated Software Testing
+            Agentic-Aware Autonomous Software Testing
           </h1>
           <p className={styles.heroSubtitle}>
-            Offering solutions for software testing that delivers deterministic, reliable validation, ensuring stability and confidence in the otherwise dynamic and rapidly evolving landscape of agentic software development.
+            Delivering deterministic and reliable software testing solutions that provide stable, repeatable validation—establishing confidence and control within the inherently dynamic and rapidly evolving domain of agentic software systems.
           </p>
           <a href="#contact">
             <button className={styles.ctaButton}>Get a Free Trial</button>
