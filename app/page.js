@@ -56,29 +56,29 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section id="testimonials" className={styles.sectionAlt}>
-          <h2 className={styles.sectionTitle}>Trusted by Industry Leaders</h2>
-          <div className={styles.testimonialsGrid}>
+        <section id="testimonials" className={styles.testimonials}>
+          <h2 className={styles.sectionTitle} style={{ color: 'white' }}>Industry Trusted</h2>
+          <div className={styles.testimonialGrid}>
             <div className={styles.testimonialCard}>
-              <p className={styles.quote}>"Parasoft C/C++test has been instrumental in helping us achieve ISO 26262 compliance for our automotive safety systems. The automated static analysis and unit testing capabilities are top-notch."</p>
-              <div className={styles.author}>
-                <strong>Engineering Manager</strong>
-                <span>Global Automotive Tier 1 Supplier</span>
-              </div>
+              <p className={styles.quote}>
+                "If you are building any safety or security-critical software, Parasoft C/C++Test is a no-brainer. It has been instrumental in helping us achieve our compliance goals."
+              </p>
+              <span className={styles.author}>Verified User</span>
+              <span className={styles.role}>G2 Reviewer</span>
             </div>
             <div className={styles.testimonialCard}>
-              <p className={styles.quote}>"The ability to perform MC/DC analysis seamlessly was a game-changer for our avionics certification process. TruthAdjustr's core engine saved us months of manual effort."</p>
-              <div className={styles.author}>
-                <strong>Software Lead</strong>
-                <span>Leading Aerospace Defense Contractor</span>
-              </div>
+              <p className={styles.quote}>
+                "Specifically tailored for large teams, it streamlines compliance with functional safety and process standards like ISO 26262 and IEC 61508."
+              </p>
+              <span className={styles.author}>Product Review</span>
+              <span className={styles.role}>Automotive Industry Analysis</span>
             </div>
             <div className={styles.testimonialCard}>
-              <p className={styles.quote}>"We rely on the static analysis compliance packs for FDA approval. It catches issues early and generates the reports we need for auditors automatically."</p>
-              <div className={styles.author}>
-                <strong>QA Director</strong>
-                <span>Medical Device Manufacturer</span>
-              </div>
+              <p className={styles.quote}>
+                "We were looking for a tool that covers static analysis, unit testing, and code coverage for our safety-critical systems. Parasoft delivered exactly what we needed."
+              </p>
+              <span className={styles.author}>Software Engineering Lead</span>
+              <span className={styles.role}>Aerospace Systems Manufacturer</span>
             </div>
           </div>
         </section>
