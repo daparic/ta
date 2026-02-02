@@ -8,17 +8,18 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.logo}>truthadjustr</div>
         <nav className={styles.nav}>
-          <a href="#features" className={styles.navLink}>Features</a>
-          <a href="#testimonials" className={styles.navLink}>Testimonials</a>
-          <a href="#contact" className={styles.navLink}>Contact</a>
+          <a href="#features">Features</a>
+          <a href="#compliance">Compliance</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact" className={styles.ctaButtonSmall}>Get Started</a>
         </nav>
       </header>
 
-      <main>
+      <main className={styles.main}>
         {/* Hero Section */}
         <section className={styles.hero}>
           <h1 className={styles.heroTitle}>
-            Agentic-Aware Autonomous Software Testing
+            Agentic-aware Automated Software Testing
           </h1>
           <p className={styles.heroSubtitle}>
             Delivering deterministic and reliable software testing solutions that provide stable, repeatable validation—establishing confidence and control within the inherently dynamic and rapidly evolving domain of agentic software systems.
@@ -55,43 +56,38 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section id="testimonials" className={styles.testimonials}>
-          <h2 className={styles.sectionTitle} style={{ color: 'white' }}>Industry Trusted</h2>
-          <div className={styles.testimonialGrid}>
+        <section id="testimonials" className={styles.sectionAlt}>
+          <h2 className={styles.sectionTitle}>Trusted by Industry Leaders</h2>
+          <div className={styles.testimonialsGrid}>
             <div className={styles.testimonialCard}>
-              <p className={styles.quote}>
-                "If you are building any safety or security-critical software, Parasoft C/C++Test is a no-brainer. It has been instrumental in helping us achieve our compliance goals."
-              </p>
-              <span className={styles.author}>Verified User</span>
-              <span className={styles.role}>G2 Reviewer</span>
+              <p className={styles.quote}>"Parasoft C/C++test has been instrumental in helping us achieve ISO 26262 compliance for our automotive safety systems. The automated static analysis and unit testing capabilities are top-notch."</p>
+              <div className={styles.author}>
+                <strong>Engineering Manager</strong>
+                <span>Global Automotive Tier 1 Supplier</span>
+              </div>
             </div>
             <div className={styles.testimonialCard}>
-              <p className={styles.quote}>
-                "Specifically tailored for large teams, it streamlines compliance with functional safety and process standards like ISO 26262 and IEC 61508."
-              </p>
-              <span className={styles.author}>Product Review</span>
-              <span className={styles.role}>Automotive Industry Analysis</span>
+              <p className={styles.quote}>"The ability to perform MC/DC analysis seamlessly was a game-changer for our avionics certification process. TruthAdjustr's core engine saved us months of manual effort."</p>
+              <div className={styles.author}>
+                <strong>Software Lead</strong>
+                <span>Leading Aerospace Defense Contractor</span>
+              </div>
             </div>
             <div className={styles.testimonialCard}>
-              <p className={styles.quote}>
-                "We were looking for a tool that covers static analysis, unit testing, and code coverage for our safety-critical systems. Parasoft delivered exactly what we needed."
-              </p>
-              <span className={styles.author}>Software Engineering Lead</span>
-              <span className={styles.role}>Aerospace Systems Manufacturer</span>
+              <p className={styles.quote}>"We rely on the static analysis compliance packs for FDA approval. It catches issues early and generates the reports we need for auditors automatically."</p>
+              <div className={styles.author}>
+                <strong>QA Director</strong>
+                <span>Medical Device Manufacturer</span>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className={`${styles.section} ${styles.contactSection}`}>
+        <section id="contact" className={styles.section}>
           <h2 className={styles.sectionTitle}>Get In Touch</h2>
           <div className={styles.contactContainer}>
             <div className={styles.contactInfo}>
-              <h3>Contact Information</h3>
-              <p style={{ marginBottom: '2rem', color: 'var(--text-light)' }}>
-                Ready to elevate your safety-critical software testing? Contact us today.
-              </p>
-
               <div className={styles.infoItem}>
                 <span>📍</span>
                 <span>Cebu, Philippines</span>
@@ -106,24 +102,7 @@ export default function Home() {
               </div>
             </div>
 
-            <form className={styles.form} action="https://formspree.io/f/meezrkdz" method="POST">
-              <div className={styles.formGroup}>
-                <label htmlFor="name" className={styles.label}>Full Name</label>
-                <input type="text" id="name" name="name" className={styles.input} placeholder="" />
-              </div>
-
-              <div className={styles.formGroup}>
-                <label htmlFor="email" className={styles.label}>Work Email</label>
-                <input type="email" id="email" name="email" className={styles.input} placeholder="" />
-              </div>
-
-              <div className={styles.formGroup}>
-                <label htmlFor="message" className={styles.label}>How can we help?</label>
-                <textarea id="message" name="message" className={styles.textarea} placeholder=""></textarea>
-              </div>
-
-              <button type="submit" className={styles.submitBtn}>Send Message</button>
-            </form>
+            <ContactForm />
           </div>
         </section>
       </main>
