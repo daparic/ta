@@ -93,7 +93,7 @@ export default function Home() {
               </div>
               <div className={styles.infoItem}>
                 <span>📱</span>
-                <span>09497363911</span>
+                <span>09497363911, 09053206961</span>
               </div>
               <div className={styles.infoItem}>
                 <span>✉️</span>
