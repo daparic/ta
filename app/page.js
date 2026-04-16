@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ContactForm from "./components/ContactForm";
+import VideoPlayer from "./components/VideoPlayer";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
           <p className={styles.heroSubtitle}>
             Delivering deterministic and reliable software testing solutions that provide stable, repeatable validation—establishing confidence and control within the inherently dynamic and rapidly evolving domain of agentic software systems.
           </p>
+          <VideoPlayer />
           <a href="#contact">
             <button className={styles.ctaButton}>Get a Free Trial</button>
           </a>
@@ -101,7 +103,18 @@ export default function Home() {
               </div>
             </div>
 
-            <ContactForm />
+            <div className={styles.formWrapper}>
+              <ContactForm />
+              <div className={styles.contactLogo}>
+                <Image
+                  src="/images/truthadjustr-logo2-50percent.png"
+                  alt="truthadjustr logo"
+                  width={400}
+                  height={400}
+                  className={styles.gearImage}
+                />
+              </div>
+            </div>
           </div>
         </section>
       </main>
