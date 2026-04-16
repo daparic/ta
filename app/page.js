@@ -105,15 +105,6 @@ export default function Home() {
 
             <div className={styles.formWrapper}>
               <ContactForm />
-              <div className={styles.contactLogo}>
-                <Image
-                  src="/images/truthadjustr-logo2-50percent.png"
-                  alt="truthadjustr logo"
-                  width={400}
-                  height={400}
-                  className={styles.gearImage}
-                />
-              </div>
             </div>
           </div>
         </section>
