@@ -99,7 +99,7 @@ export default function Home() {
               </div>
               <div className={styles.infoItem}>
                 <span>✉️</span>
-                <span>daparicio@parasoft.com</span>
+                <span>dex@leverai.company</span>
               </div>
             </div>
 
